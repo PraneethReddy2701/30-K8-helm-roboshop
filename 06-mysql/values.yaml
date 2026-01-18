@@ -1,0 +1,4 @@
+statefulset:
+  replicas: 1
+  imageURL: praneeth2701/mysql
+  imageVersion: v2
