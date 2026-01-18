@@ -1,5 +1,5 @@
 apiVersion: v2                            # Chart API version
-name: mongodb                              # Chart name
+name: mongodb                             # Chart name
 version: 1.0.0                            # Chart version
-description: mongodb helm chart    # Chart description
-appVersion: 1.0.1                         # application version
+description: mongodb helm chart           # Chart description
+appVersion: v1                            # application version
