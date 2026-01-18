@@ -8,7 +8,7 @@ metadata:
     project: roboshop
     tier: app
 spec:
-  replicas: 1
+  replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
       component: cart
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: cart
-        image: praneeth2701/cart:v2
+        image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
         resources:
           requests:
             cpu: "50m"
