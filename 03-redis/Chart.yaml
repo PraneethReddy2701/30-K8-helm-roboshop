@@ -1,0 +1,5 @@
+apiVersion: v2                              # Chart API version
+name: redis                                 # Chart name
+version: 1.0.0                              # Chart version
+description: redis helm chart               # Chart description
+appVersion: v1                              # application version
