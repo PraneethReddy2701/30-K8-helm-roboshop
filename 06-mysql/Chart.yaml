@@ -1,0 +1,5 @@
+apiVersion: v2                              # Chart API version
+name: mysql                                  # Chart name
+version: 1.0.0                              # Chart version
+description: mysql helm chart                # Chart description
+appVersion: v1                              # application version
