@@ -1,0 +1,7 @@
+deployment:
+  replicas: 1
+  imageURL: praneeth2701/cart
+  imageVersion: v2
+hpa:
+  maxReplicas: 10
+  Utilization: 75
