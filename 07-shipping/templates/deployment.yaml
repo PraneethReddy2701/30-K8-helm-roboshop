@@ -8,7 +8,7 @@ metadata:
     project: roboshop
     tier: app
 spec:
-  replicas: 1
+  replicas: {{ .Values.deployment.replicas }}
   selector:
     matchLabels:
       component: shipping
@@ -23,7 +23,7 @@ spec:
     spec:
       containers:
       - name: shipping
-        image: praneeth2701/shipping:v2
+        image: "{{ .Values.deployment.imageURL }}:{{ .Values.deployment.imageVersion }}"
         resources:
           requests:
             cpu: "100m"
