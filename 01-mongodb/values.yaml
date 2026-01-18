@@ -1,0 +1,4 @@
+statefulset:
+  replicas: 2
+  imageURL: praneeth2701/mongodb
+  imageVersion: v2
